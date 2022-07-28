@@ -8,7 +8,7 @@ const auth = (handler) => {
     if (req.method === 'get') {
       return handler(req, res)
     }
-    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdvcmlsbGFAZ21haWwuY29tIiwiaWF0IjoxNjU4NDEyMTQwLCJleHAiOjE2NTg0OTQ5NDB9.GiNgStbT0hJsk8bCM0eN9aN1mAhHRYWDTLF3p11AQWY'
+    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im55YW55YSIsImlhdCI6MTY1ODg0MTI3MSwiZXhwIjoxNjU4OTI0MDcxfQ.BflLw3KuC5YD0iSXZrcBfAK_feRyER958rcC3r3k8Z4'
     // const token = await req.headers.authorization.split(' ')[1]
     
     if (!token) {
