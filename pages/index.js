@@ -7,7 +7,7 @@ const ReadAllItems = ({ allItems }) => {
       <div>
         {allItems.map(({ _id, image, price, title, description }) => {
           return (
-            <Link href='' key={_id}>
+            <Link href={`/item/${_id}`} key={_id}>
               <a>
                 <Image src={image} width='750px' height='500px' alt="item-image"/>
                 <div>
